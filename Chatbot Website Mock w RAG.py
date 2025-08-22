@@ -39,7 +39,7 @@ def _require_password():
     with st.sidebar:
         st.subheader("Locked")
         pw = st.text_input("Password", type="password", placeholder="Enter password")
-        if pw == "MOSTprototype":
+        if pw == "XXXXX":
             st.session_state["auth_ok"] = True
         elif pw:  # wrong non-empty input
             st.error("Incorrect password")
@@ -584,3 +584,4 @@ with col_right:
     if st.session_state.get("clinician_summary"):
         st.subheader("Clinician summary")
         st.markdown(st.session_state["clinician_summary"])
+
